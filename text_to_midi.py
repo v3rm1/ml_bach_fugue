@@ -36,7 +36,7 @@ mf.addTempo(3, time, beats_per_minute)
 #initialize a list which stores notes, and only adds them to the midi after the full duration is known
 note_storage = [Note(), Note(), Note(), Note()]
 
-text_file = open("F.txt", "r")
+text_file = open("new_bach.txt", "r")
 for line in text_file:
 	track_values = line.split()
 	for t in range(0,4):

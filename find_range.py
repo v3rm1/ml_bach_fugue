@@ -14,4 +14,4 @@ for line in text_file:
 
 for t in range(0,4):
 	print("Track ", t, ": From ", mins[t], " to ", maxs[t])
-	print("\tRange: ", maxs[t] - mins[t], " plus 1 for rests")
+	print("\tRange: ", maxs[t] - mins[t] + 1, " plus 1 for rests")
