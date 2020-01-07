@@ -1,4 +1,3 @@
-import pretty_midi
 import numpy as np
 from mido import MidiFile, MidiTrack, Message as MidiMessage
 import music21
@@ -53,14 +52,13 @@ def transpose_key(filename):
 
 
 if __name__ == '__main__':
-    transpose_key('test1.mid')
+    # transpose_key('test1.mid')
 
-    mid = MidiFile('C_test1.mid')
-    tpb = mid.ticks_per_beat
-    metamessages, insmessages = cvt.split_tracks(mid)
-    for instruments in insmessages:
-        stream = cvt.notes_to_pitchstream(instruments, tpb)
-        cvt.pitch_stream_to_text(stream)
+    # mid = MidiFile('C_test1.mid')
+    # tpb = mid.ticks_per_beat
+    # metamessages, insmessages = cvt.split_tracks(mid)  # Make sure that only 4 instruments are passed forward
+    # streams = cvt.notes_to_pitchstream(insmessages, tpb)
+    # cvt.pitch_stream_to_text(streams, append=False)
 
     stream = cvt.text_to_pitch_stream()
     mid = cvt.pitchstream_to_midi(stream)
