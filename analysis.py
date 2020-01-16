@@ -3,7 +3,8 @@ from matplotlib import pyplot as plt
 
 if __name__ == "__main__":
     file_path = "./data/F.txt"
-    signal_df = pd.read_csv(file_path, delimiter="\t", names=['Inst1', 'Inst2', 'Inst3', 'Inst4'])
+    signal_df = pd.read_csv(file_path, delimiter="\t",
+                            names=['Inst1', 'Inst2', 'Inst3', 'Inst4'])
     print(signal_df.head())
     print("Read input file into dataframe")
     print("Plotting the patterns for the 4 different instruments.")
@@ -18,5 +19,7 @@ if __name__ == "__main__":
     plt.savefig('./data/key_time_plt.png')
     print("\nMin-Max and Unique Keys for each instrument:\n")
     for col in signal_df.columns:
-        print('{}: Max: {}, Min: {}, Unique Keys: {}'.format(col, max(signal_df[col]), min(signal_df[col]), len(signal_df[col].unique())-1))
+        print('{}: Max: {}, Min: {}, Unique Keys: {}'
+              .format(col, max(signal_df[col]), min(signal_df[col]),
+                      len(signal_df[col].unique())-1))
     pass
