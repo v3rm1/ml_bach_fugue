@@ -1,0 +1,11 @@
+venv
+.idea
+*.mid
+*.MID
+*.midi
+*.MIDI
+*.txt
+.ipynb_checkpoints
+*.obj
+Multicore-TSNE
+__pycache__
