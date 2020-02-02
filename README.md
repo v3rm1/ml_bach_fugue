@@ -9,3 +9,5 @@ The Simple Bigram folder contains the baseline bigram model. Run `simple_bigram.
 The preprocessing folder contains converters to convert midi files to pitch list and pitch list back to midi. It also has a converter for converting midi files to characters and can convert text back to midi. The `DataScraping.ipynb` script downloads midi files from a particular website. `CharNN.ipynb` is the character level implementation of LSTM which trains on text characters converted from midi file.
 
 If you want the trained embedding vectors you can get them [here](https://drive.google.com/file/d/1e3WbMZCvxr_OeTqtFZiuXrGYJqrGExqv/view?usp=sharing).
+
+The predicted outputs are available in the Generated Music folder.
